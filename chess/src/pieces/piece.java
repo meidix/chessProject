@@ -61,6 +61,7 @@ public class piece
 
     public void capture(Position pos)
     {
+        if (Board.isEmpty(pos)) return;
         piece p = Board.get(pos.getX(), pos.getY());
         p.captured();
         this.move(pos);
@@ -87,5 +88,6 @@ public class piece
     {
         position.setPosition(x, y);
     }
+
 
 }

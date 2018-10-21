@@ -16,4 +16,10 @@ public class Board
     {
         return matrix[x][y];
     }
+    public static boolean isEmpty(Position pos)
+    {
+        if (matrix[pos.getX()][pos.getY()] == null) return true;
+        else return false;
+    }
+
 }
