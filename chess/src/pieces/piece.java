@@ -78,16 +78,16 @@ public class piece
     {
         return isAlive;
     }
-
     public Position position()
     {
         return position;
     }
-
     public void setPosition(int x, int y)
     {
         position.setPosition(x, y);
     }
+    public boolean isThere(Position pos) {return true;}
+
 
 
 }
