@@ -21,5 +21,11 @@ public class Board
         if (matrix[pos.getX()][pos.getY()] == null) return true;
         else return false;
     }
+    public void putPiece(piece p)
+    {
+        Position po = p.position();
+        matrix[po.getX()][po.getY()] = p;
+    }
+
 
 }
