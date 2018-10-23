@@ -11,6 +11,10 @@ public class Position
     private int x;
     private int y;
 
+    public Position() {
+        x = 0;
+        y = 0;
+    }
     // just initializing the two numbers to member variables
     public Position(int u_x, int u_y)
     {
