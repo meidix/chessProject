@@ -17,7 +17,7 @@ public class piece
      * an enum for the colours
      *
      */
-    protected enum Colour
+    public static enum Colour
     {
         WHITE, BLACK;
     }
