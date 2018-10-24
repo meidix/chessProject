@@ -4,9 +4,24 @@ import Board.*;
 import pieces.*;
 
 public class Logic {
+    Board GameBoard = new Board();
+    Position pos = new Position(0,0);
+    // For put pieces in Board
   public void setPieces(){
-      Board GameBoard = new Board();
-      Position pos = new Position(0,0);
+      Pawn[] arrwPawn = new Pawn[8];
+      for (int i=0 ; i<8 ; i++){
+          pos.setPosition(6,i);
+          arrwPawn[i] = new Pawn (pos , piece.Colour.WHITE);
+          GameBoard.putPiece(arrwPawn[i]);
+      }
+
+      Pawn[] arrbPawn = new Pawn[8];
+      for(int i=0 ; i<8 ; i++){
+          pos.setPosition(0,i);
+          arrbPawn[i] = new Pawn(pos , piece.Colour.BLACK);
+          GameBoard.putPiece(arrbPawn[i]);
+      }
+
 
       //set black pieces in the board
 
@@ -17,6 +32,7 @@ public class Logic {
       pos.setPosition(0,7);
       Rook bRook2 = new Rook(pos, piece.Colour.BLACK);
       GameBoard.putPiece(bRook2);
+
 
       pos.setPosition(0,1);
       Knight bKnight1 = new Knight(pos, piece.Colour.BLACK);
@@ -41,41 +57,6 @@ public class Logic {
       pos.setPosition(0,4);
       King bKing = new King(pos, piece.Colour.BLACK);
       GameBoard.putPiece(bKing);
-
-      pos.setPosition(1,0);
-      Pawn bPawn1 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn1);
-
-      pos.setPosition(1,1);
-      Pawn bPawn2 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn2);
-
-      pos.setPosition(1,2);
-      Pawn bPawn3 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn3);
-
-      pos.setPosition(1,3);
-      Pawn bPawn4 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn4);
-
-      pos.setPosition(1,4);
-      Pawn bPawn5 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn5);
-
-      pos.setPosition(1,5);
-      Pawn bPawn6 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn6);
-
-      pos.setPosition(1,6);
-      Pawn bPawn7 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn7);
-
-      pos.setPosition(1,7);
-      Pawn bPawn8 = new Pawn(pos, piece.Colour.BLACK);
-      GameBoard.putPiece(bPawn8);
-
-
-
 
       //set white pieces in the board
 
@@ -111,37 +92,24 @@ public class Logic {
       King wKing = new King(pos, piece.Colour.WHITE);
       GameBoard.putPiece(wKing);
 
-      pos.setPosition(6,0);
-      Pawn wPawn1 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn1);
 
-      pos.setPosition(6,1);
-      Pawn wPawn2 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn2);
 
-      pos.setPosition(6,2);
-      Pawn wPawn3 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn3);
-
-      pos.setPosition(6,3);
-      Pawn wPawn4 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn4);
-
-      pos.setPosition(6,4);
-      Pawn wPawn5 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn5);
-
-      pos.setPosition(6,5);
-      Pawn wPawn6 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn6);
-
-      pos.setPosition(6,6);
-      Pawn wPawn7 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn7);
-
-      pos.setPosition(6,7);
-      Pawn wPawn8 = new Pawn(pos, piece.Colour.WHITE);
-      GameBoard.putPiece(wPawn8);
-
+      Rook arrwRook[] = {wRook1,wRook2};
+      Rook arrbRook[] = {bRook1,bRook2};
+      Queen arrwQueen[] = {wQueen};
+      Queen arrbQueen[] = {bQueen};
+      Knight arrwKnight[] = {wKnight1,wKnight2};
+      Knight arrbKnight[] = {bKnight1,bKnight2};
+      King arrwKing[] = {wKing};
+      King arrbKing[] = {bKing};
+      Bishop arrwBishop[] = {wBishop1,wBishop2};
+      Bishop arrbBishop[] = {bBishop1,bBishop2};
   }
+    //For set Turn
+  public piece.Colour Turn(boolean b){
+      boolean turn = b;
+      if(turn == true){return piece.Colour.WHITE;}
+      else {return piece.Colour.BLACK;}
+  }
+
 }
