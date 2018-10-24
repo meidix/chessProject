@@ -3,6 +3,7 @@ package logic;
 import Board.*;
 import pieces.*;
 
+// TODO: should be checked for a better efficiency
 public class Logic {
     Board GameBoard = new Board();
     Position pos = new Position(0,0);
@@ -113,6 +114,7 @@ public class Logic {
   }
 
   public void WhiteMovement(int i , int j , int k , int l){
+      // FIXME: equals() should be overriden. meidix will override it
       if(GameBoard.get(i, j).isAlive() == true && GameBoard.get(i,j).getColour()== piece.Colour.WHITE){
           pos.setPosition(k,l);
           if(GameBoard.isEmpty(pos)==true) {
@@ -122,6 +124,7 @@ public class Logic {
   }
 
   public void BlackMovement(int i , int j , int k , int l){
+      // FIXME: meidix overrriding the equals() function
       if(GameBoard.get(i,j).isAlive() == true && GameBoard.get(i,j).getColour() == piece.Colour.BLACK){
           pos.setPosition(k,l);
           if(GameBoard.isEmpty(pos) == true){
