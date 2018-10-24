@@ -5,16 +5,6 @@ import java.util.*;
 
 public class Pawn extends piece
 {
-
-    /**
-     *
-     * @param u_pos
-     * the position of the piece
-     *
-     * @param col
-     * the colour of the piece
-     *
-     */
     public Pawn(Position u_pos, Colour col)
     {
         super(u_pos, col);
@@ -44,6 +34,10 @@ public class Pawn extends piece
 
     }
 
+    /**
+     * checks if the pawn is in the starting place or not
+     * @return true if in position
+     */
     public boolean PawnInPosition()
     {
         if(getColour().equals(Colour.BLACK))

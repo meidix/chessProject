@@ -27,7 +27,6 @@ public class piece
      * the default constructor.
      * for creating objects of this type to put something in them
      * this Constructor wont be used in sub classes
-     *
      */
     public piece()
     {
@@ -36,13 +35,8 @@ public class piece
 
     /**
      *
-     * @param u_pos
-     * the position of the piece
-     *
-     *
-     * @param col
-     * the colour of the piece
-     *
+     * @param u_pos the position of the piece
+     * @param col the colour of the piece
      * this constructor is used in the subclasses
      */
     public piece(Position u_pos, Colour col)
@@ -54,8 +48,12 @@ public class piece
     public Colour getColour()
     {
         return colour;
-    }
+    }       //getter function
 
+    /**
+     * captures the piece in the given position
+     * @param pos the position of the piece that is going to be captured
+     */
     public void capture(Position pos)
     {
         if (Board.isEmpty(pos)) return;
@@ -64,25 +62,25 @@ public class piece
         this.move(pos);
     }
 
+    // moves the piece if valid
     public void move(Position pos){}
-    public void captured()
-    {
-            isAlive = false;
 
-    }
+    // changes the state of isAlive paramater
+    public void captured() { isAlive = false; }
 
-    public boolean isAlive()
-    {
-        return isAlive;
-    }
-    public Position position()
-    {
-        return position;
-    }
-    public void setPosition(int x, int y)
+
+    public boolean isAlive() { return isAlive; }        // getter function
+    public Position position() { return position; }     //getter function
+    public void setPosition(int x, int y)               // setter function
     {
         position.setPosition(x, y);
     }
+
+    /**
+     * checks if there is a ny other piece in the path of the piece movement
+     * @param pos is the destination of the movement
+     * @return true if there is no pieces in the way
+     */
     public boolean isThere(Position pos) {return true;}
 
 
