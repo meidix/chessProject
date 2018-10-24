@@ -114,22 +114,38 @@ public class Logic {
   }
 
   public void WhiteMovement(int i , int j , int k , int l){
-      // FIXME: equals() should be overriden. meidix will override it
       if(GameBoard.get(i, j).isAlive() == true && GameBoard.get(i,j).getColour()== piece.Colour.WHITE){
           pos.setPosition(k,l);
           if(GameBoard.isEmpty(pos)==true) {
               GameBoard.get(i, j).move(pos);
           }
+
       }
   }
 
   public void BlackMovement(int i , int j , int k , int l){
-      // FIXME: meidix overrriding the equals() function
       if(GameBoard.get(i,j).isAlive() == true && GameBoard.get(i,j).getColour() == piece.Colour.BLACK){
           pos.setPosition(k,l);
           if(GameBoard.isEmpty(pos) == true){
               GameBoard.get(i,j).move(pos);
           }
+      }
+  }
+    //a piece in (i,j) kill a piece in (k,l)
+  public void CaptuePiece(int i , int j , int k , int l){
+      if(GameBoard.get(i,j).getColour() != GameBoard.get(k,l).getColour()){
+          //a method in piece for setAlive
+
+          //How to delete from array??
+
+          //We need a method to null the (k,l) cell in GameBoard
+          GameBoard.setNull(k,l);
+
+          pos.setPosition(k,l);
+          GameBoard.get(i,j).move(pos); //to move the killer in new cell
+
+
+
       }
   }
 
