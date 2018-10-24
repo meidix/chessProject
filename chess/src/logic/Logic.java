@@ -112,4 +112,22 @@ public class Logic {
       else {return piece.Colour.BLACK;}
   }
 
+  public void WhiteMovement(int i , int j , int k , int l){
+      if(GameBoard.get(i, j).isAlive() == true && GameBoard.get(i,j).getColour()== piece.Colour.WHITE){
+          pos.setPosition(k,l);
+          if(GameBoard.isEmpty(pos)==true) {
+              GameBoard.get(i, j).move(pos);
+          }
+      }
+  }
+
+  public void BlackMovement(int i , int j , int k , int l){
+      if(GameBoard.get(i,j).isAlive() == true && GameBoard.get(i,j).getColour() == piece.Colour.BLACK){
+          pos.setPosition(k,l);
+          if(GameBoard.isEmpty(pos) == true){
+              GameBoard.get(i,j).move(pos);
+          }
+      }
+  }
+
 }
