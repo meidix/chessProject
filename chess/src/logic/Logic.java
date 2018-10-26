@@ -5,6 +5,19 @@ import pieces.*;
 
 // TODO: should be checked for a better efficiency
 public class Logic {
+    Rook[] wRook = new Rook[2];
+    Rook[] bRook = new Rook[2];
+    Pawn[] wPawn = new Pawn[8];
+    Pawn[] bPawn = new Pawn[8];
+    Bishop[] bBishop = new Bishop[2];
+    Bishop[] wBishop = new Bishop[2];
+    King[] bKing = new King[1];
+    King[] wKing = new King[1];
+    Knight[] wKnight = new Knight[2];
+    Knight[] bKnight = new Knight[2];
+    Queen[] wQueen = new Queen[1];
+    Queen[] bQueen = new Queen[1];
+
     Board GameBoard = new Board();
     Position pos = new Position(0,0);
     // For put pieces in Board
@@ -134,9 +147,10 @@ public class Logic {
     //a piece in (i,j) kill a piece in (k,l)
   public void CaptuePiece(int i , int j , int k , int l){
       if(GameBoard.get(i,j).getColour() != GameBoard.get(k,l).getColour()){
-          //a method in piece for setAlive
+          pos.setPosition(k,l);
+          GameBoard.get(i,j).capture(pos);
+          GameBoard.get(k,l).captured();
 
-          //How to delete from array??
 
           //We need a method to null the (k,l) cell in GameBoard
           GameBoard.setNull(k,l);
