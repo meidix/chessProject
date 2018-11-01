@@ -57,4 +57,14 @@ public class Board
         Position po = p.position();
         matrix[po.getX()][po.getY()] = p;
     }
+
+    /**
+     * to set the selected to position null after a piece in being captured
+     * @param pos the position that will be set to null
+     */
+    public static void setNull(Position pos)
+    {
+        matrix[pos.getX()][pos.getY()] = null;
+    }
+
 }
