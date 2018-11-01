@@ -150,12 +150,11 @@ public class Logic {
           pos.setPosition(k,l);
           GameBoard.get(i,j).capture(pos);
           GameBoard.get(k,l).captured();
-
+          
 
           //We need a method to null the (k,l) cell in GameBoard
-          GameBoard.setNull(k,l);
-
           pos.setPosition(k,l);
+          GameBoard.setNull(pos);
           GameBoard.get(i,j).move(pos); //to move the killer in new cell
 
 
