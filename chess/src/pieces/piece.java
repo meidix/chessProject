@@ -83,6 +83,13 @@ public class piece
      */
     public boolean isThere(Position pos) {return true;}
 
+    /**
+     * a method for determining if a piece puts the king in check
+     * @param pos the position of the king.
+     * @return true if it puts the king in that position in check and, false if otherwise
+     */
+    public boolean putInCheck(Position pos) {return true;}
+
 
 
 }
