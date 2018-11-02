@@ -13,7 +13,10 @@ public class Knight extends piece
     @Override
     public void move(Position pos)
     {
-
+        if(isThere(pos))
+        {
+            this.setPosition(pos.getX(), pos.getY());
+        }
     }
 
     @Override
