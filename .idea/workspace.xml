@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1123a2e0-12f6-4df1-8a4c-08246466be78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/Players/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/Players/Players.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/pieces/piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/pieces/piece.java" afterDir="false" />
-    </list>
+    <list default="true" id="1123a2e0-12f6-4df1-8a4c-08246466be78" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +13,7 @@
     <session id="864139914">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -206,8 +201,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="25" width="1307" height="743" extended-state="7" />
-    <editor active="true" />
+    <frame x="59" y="25" width="1307" height="743" extended-state="6" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
