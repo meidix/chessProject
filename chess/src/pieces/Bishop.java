@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Players.Players;
 
 public class Bishop extends piece
 {
@@ -30,8 +31,31 @@ public class Bishop extends piece
     public boolean isThere(Position pos)
     {
         // TODO: double check this function
-        //FIXME: it probably doesnt work when a variable can not be bellow zero
+        // FIXME: it probably doesnt work when a variable can not be bellow zero
         int x0 = position().getX(), y0 = position().getY(), x1 = pos.getX(), y1 = pos.getY();
+        if (x0 > x1)
+        {
+            for (int i = x1; i < x0; i++) {
+                Position p = new Position(x1, x1 + 1);
+                if (!Board.isEmpty(p)) return false;
+            }
+            return true;
+        }
+        else
+        {
+            for (int i = x0; i < x1; i++) {
+                Position p = new Position(x1, x1 + 1);
+                if (!Board.isEmpty(p)) return false;
+            }
+            return true;
+        }
+    }
+
+    @Override
+    public boolean putInCheck(Players p)
+    {
+        Position king = p.kingPos();
+        int x0 = this.position().getX(), y0 = this.position().getY(), x1 = king.getX(), y1 = king.getY();
         if (x0 > x1)
         {
             for (int i = x1; i < x0; i++) {
