@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Players.Players;
 
 /**
  * just an abstract class to make it somehow generic
@@ -77,7 +78,7 @@ public class piece
     }
 
     /**
-     * checks if there is a ny other piece in the path of the piece movement
+     * checks if there is any other piece in the path of the piece movement
      * @param pos is the destination of the movement
      * @return true if there is no pieces in the way
      */
@@ -88,7 +89,7 @@ public class piece
      * @param pos the position of the king.
      * @return true if it puts the king in that position in check and, false if otherwise
      */
-    public boolean putInCheck(Position pos) {return true;}
+    public boolean putInCheck( Players p) {return true;}
 
 
 
