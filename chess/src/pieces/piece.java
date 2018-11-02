@@ -89,7 +89,7 @@ public class piece
      * @param pos the position of the king.
      * @return true if it puts the king in that position in check and, false if otherwise
      */
-    public boolean putInCheck( Players p) {return true;}
+    public boolean putInCheck(Players p) {return true;}
 
 
 
