@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Players.Players;
 
 public class Rook extends piece
 {
@@ -73,5 +74,15 @@ public class Rook extends piece
         }
         else return false;
     }
+
+    @Override
+    public boolean putInCheck(Players p)
+    {
+        Position pos = p.kingPos();
+        int x0 = this.position().getX(), y0 = this.position().getY(), x1 = pos.getX(), y1 = pos.getY();
+        if(x0 == x1 || y0 == y1) return true;
+        else return false;
+    }
+
 
 }
