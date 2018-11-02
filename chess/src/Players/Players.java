@@ -47,12 +47,13 @@ public class Players
         Position pos = new Position();
         for (int i = 0; i < 8; i ++)
             for (int j = 0; j < 8; j++)
-                if(Board.get(i, j).getClass().getName() == "pieces.King")
-                {
+            {
+                if (Board.get(i, j).getClass().getName() == "pieces.King") {
                     pos.setPosition(i, j);
                     if (Board.get(i, j).getColour() != this.color) return pos;
                 }
-
+                else throw new //Exception;
+            }
 
     }
 }
