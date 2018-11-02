@@ -1,7 +1,11 @@
 package pieces;
 
 import Board.Position;
+import Players.Players;
+
 import java.util.*;
+
+import static java.lang.Math.abs;
 
 public class Pawn extends piece
 {
@@ -18,7 +22,7 @@ public class Pawn extends piece
         if (getColour().equals(Colour.BLACK))
         {
             if (x1 <= x0 || x1 - x0 > 2 ) // TODO: throw an exception
-            else if(Math.abs(y1 - y0) > 1) // TODO: throw exception
+            else if(abs(y1 - y0) > 1) // TODO: throw exception
             else if (PawnInPosition()) setPosition(x1, y1);
             else if(x1 - x0 == 1) setPosition(x1, y1);
             else // TODO: throw exception
@@ -26,7 +30,7 @@ public class Pawn extends piece
         else
         {
             if (x1 >= x0 || x0 - x1 > 2 )// TODO: throw an exception
-            else if(Math.abs(y1 - y0) > 1) // TODO: throw exception
+            else if(abs(y1 - y0) > 1) // TODO: throw exception
             else if (PawnInPosition()) setPosition(x1, y1);
             else if(x0 - x1 == 1) setPosition(x1, y1);
             else // TODO: throw exception
@@ -58,6 +62,15 @@ public class Pawn extends piece
             }
             return false;
         }
+    }
+
+    @Override
+    public boolean putInCheck(Players p)
+    {
+        Position king = p.kingPos();
+        int x0 = this.position().getX(), y0 = this.position().getY(), x1 = king.getX(), y1 = king.getY();
+        if(abs(x1 - x0) == 1 && abs(y1 - y0) == 1) return true;
+        else return false;
     }
 
 }
