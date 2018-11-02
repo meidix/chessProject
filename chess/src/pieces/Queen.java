@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Players.Players;
 
 public class Queen extends piece
 {
@@ -101,4 +102,26 @@ public class Queen extends piece
         }
     }
 
-}
+    @Override
+    public boolean putInCheck(Players p)
+    {
+        Position king = p.kingPos();
+        int x0 = this.position().getX(), y0 = this.position().getY(), x1 = king.getX(), y1 = king.getY();
+        if(x0 == x1 || y0 == y1) return true;
+        else if (x0 > x1)
+        {
+            for (int i = x1; i < x0; i++) {
+                Position p = new Position(x1, x1 + 1);
+                if (!Board.isEmpty(p)) return false;
+            }
+            return true;
+        }
+        else
+        {
+            for (int i = x0; i < x1; i++) {
+                Position p = new Position(x1, x1 + 1);
+                if (!Board.isEmpty(p)) return false;
+            }
+            return true;
+        }
+    }
