@@ -1,6 +1,7 @@
 package pieces;
 
 import Board.Position;
+import Exceptions.WrongeMoveAttemptException;
 import Players.Players;
 
 import java.util.*;
@@ -21,19 +22,19 @@ public class Pawn extends piece
         int x0 = position().getX(), y0 = position().getY(), x1 = pos.getX(), y1 = pos.getY();
         if (getColour().equals(Colour.BLACK))
         {
-            if (x1 <= x0 || x1 - x0 > 2 ) // TODO: throw an exception
-            else if(abs(y1 - y0) > 1) // TODO: throw exception
+            if (x1 <= x0 || x1 - x0 > 2 ) throw new WrongeMoveAttemptException(" Wronge move attempt");
+            else if(abs(y1 - y0) > 1) throw new WrongeMoveAttemptException(" Wronge move attempt");
             else if (PawnInPosition()) setPosition(x1, y1);
             else if(x1 - x0 == 1) setPosition(x1, y1);
-            else // TODO: throw exception
+            else throw new WrongeMoveAttemptException(" Wronge move attempt");
         }
         else
         {
-            if (x1 >= x0 || x0 - x1 > 2 )// TODO: throw an exception
-            else if(abs(y1 - y0) > 1) // TODO: throw exception
+            if (x1 >= x0 || x0 - x1 > 2 ) throw new WrongeMoveAttemptException(" Wronge move attempt");
+            else if(abs(y1 - y0) > 1) throw new WrongeMoveAttemptException(" Wronge move attempt");
             else if (PawnInPosition()) setPosition(x1, y1);
             else if(x0 - x1 == 1) setPosition(x1, y1);
-            else // TODO: throw exception
+            else throw new WrongeMoveAttemptException(" Wronge move attempt");
         }
 
     }
