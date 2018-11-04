@@ -1,7 +1,6 @@
 package Action;
 
 import Board.Position;
-
 import java.util.*;
 
 public class Action {
@@ -27,6 +26,10 @@ public class Action {
     public Position getStartPosition() {return startPosition; }
     public Position getEndPosition() { return endPosition; }
     public Boolean captures() { return captures; }
+
+    public void setStartPosition(Position pos) { startPosition = pos; }
+    public void setEndPosition(Position pos) { endPosition = pos; }
+    public void setCaptures(boolean flag) { captures = flag; }
 
 
 
