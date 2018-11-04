@@ -74,4 +74,12 @@ public class Pawn extends piece
         else return false;
     }
 
+    public piece promote()
+    {
+        /**
+         * get the input from gui
+         * return the type they have chosen
+         */
+    }
+
 }
