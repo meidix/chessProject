@@ -43,5 +43,9 @@ public class Position
         y = _y;
     }
 
-    //TODO: override the equals function
+    public boolean equals(Position b)
+    {
+        if ( x = b.x && y = b.y) return true;
+        else return false;
+    }
 }
