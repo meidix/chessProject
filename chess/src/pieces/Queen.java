@@ -2,6 +2,8 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Exceptions.WrongeMoveAttemptException;
+import Exceptions.cellFullException;
 import Players.Players;
 
 public class Queen extends piece {
@@ -11,7 +13,6 @@ public class Queen extends piece {
 
     @Override
     public void move(Position pos) {
-        // FIXME: double check this funtion
         int x0 = position().getX(), y0 = position().getY(), x1 = pos.getX(), y1 = pos.getY();
         if (x0 == x1 || y0 == y1)
             if (this.isThere(pos))
@@ -20,14 +21,13 @@ public class Queen extends piece {
                 int gap = Math.abs(x1 - x0);
                 if (Math.abs(y1 - y0) == gap) {
                     if (isThere(pos)) setPosition(x1, y1);
-                    else // TODO: throw an exception
+                    else throw new WrongeMoveAttemptException(" Wronge move attempt");
                 }
-            } else // TODO: throw an exception
+            } else throw new WrongeMoveAttemptException(" Wronge move attempt");
     }
 
     @Override
     public boolean isThere(Position pos) {
-        // FIXME: double check this function later
         int x0 = position().getX(), y0 = position().getY(), x1 = pos.getX(), y1 = pos.getY();
         if (x0 == x1) {
             if (y0 < y1) {
