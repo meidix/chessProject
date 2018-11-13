@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Board;
 import Board.Position;
+import Players.Players;
 
 public class Knight extends piece
 {
@@ -25,6 +26,13 @@ public class Knight extends piece
         if(Board.isEmpty(pos))
             return false;
         return true;
+    }
+
+    @Override
+    public boolean putInCkeck(Players p)
+    {
+        Position pos = p.kingPos();
+        if(isThere(pos))
     }
 
 }
