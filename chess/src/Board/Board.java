@@ -40,7 +40,7 @@ public class Board
     /**
      * see if the addressed cell is empty
      * @param pos the position in which it checks if is empty or not
-     * @return the boolean type (true ot false) in either case
+     * @return returns true if the position is empty
      */
     public static boolean isEmpty(Position pos)
     {

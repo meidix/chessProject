@@ -86,7 +86,7 @@ public class piece
 
     /**
      * a method for determining if a piece puts the king in check
-     * @param pos the position of the king.
+     * @param p the player that has the king.
      * @return true if it puts the king in that position in check and, false if otherwise
      */
     public boolean putInCheck(Players p) {return true;}

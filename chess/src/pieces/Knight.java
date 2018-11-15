@@ -29,10 +29,12 @@ public class Knight extends piece
     }
 
     @Override
-    public boolean putInCkeck(Players p)
+    public boolean putInCheck(Players p)
     {
         Position pos = p.kingPos();
-        if(isThere(pos))
+        if(!isThere(pos) && Board.get(pos.getX(), pos.getY()).getClass().getName() == "pieces.King")
+            return true;
+        return false;
     }
 
 }
