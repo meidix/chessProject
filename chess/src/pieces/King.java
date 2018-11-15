@@ -2,6 +2,7 @@ package pieces;
 
 import Board.Position;
 import Board.Board;
+import Players.Players;
 
 public class King extends piece
 {
@@ -45,6 +46,15 @@ public class King extends piece
             }
         }
         return false;
+    }
+
+    @Override
+    public boolean putInCheck(Players p)
+    {
+        Position pos = p.kingPos();
+        if (!isThere(pos) && Board.get(pos.getX(), pos.getY()).getClass().getName() == "pieces.King")
+            return true;
+        else return false;
     }
 
 
