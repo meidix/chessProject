@@ -52,7 +52,7 @@ public class Players
                     pos.setPosition(i, j);
                     if (Board.get(i, j).getColour() != this.color) return pos;
                 }
-                else throw new //Exception;
+                else return pos;
             }
 
     }

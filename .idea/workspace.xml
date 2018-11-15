@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8413d207-be3c-4557-9bc8-b3db0f0d2461" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/Board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess/src/pieces/piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/chess/src/pieces/piece.java" afterDir="false" />
-    </list>
+    <list default="true" id="8413d207-be3c-4557-9bc8-b3db0f0d2461" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,69 +21,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1306" />
+          <entry key="java" value="1454" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1306" />
+          <entry key="JAVA" value="1454" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chess/src/pieces/Rook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-716">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chess/src/pieces/Knight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chess/src/pieces/Queen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-656">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chess/src/Board/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chess/src/pieces/piece.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chess/src/Players/Players.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="394">
+              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -116,6 +84,7 @@
         <option value="$PROJECT_DIR$/chess/src/Board/Board.java" />
         <option value="$PROJECT_DIR$/chess/src/pieces/piece.java" />
         <option value="$PROJECT_DIR$/chess/src/pieces/Knight.java" />
+        <option value="$PROJECT_DIR$/chess/src/pieces/King.java" />
       </list>
     </option>
   </component>
@@ -248,13 +217,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chess/src/Action/play.java" />
-    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chess/src/logic/Logic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2133">
@@ -279,10 +241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess/src/Players/Players.java">
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="390">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -293,9 +255,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Pawn.java">
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
@@ -307,17 +290,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess/src/pieces/piece.java">
+    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Rook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+        <state relative-caret-position="-716">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chess/src/pieces/Knight.java">
+    <entry file="file://$PROJECT_DIR$/chess/src/Players/Players.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="394">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
         </state>
       </provider>
     </entry>
